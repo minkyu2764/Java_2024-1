@@ -35,20 +35,23 @@ public class MultiIfTest2 {
 		System.out.print("정수 입력 : ");
 		int score = stdIn.nextInt();
 		
-		if (score >= 90) {
+		if (score >= 90 && score <= 100) {
 			System.out.println("A학점 입니다.");
 		}
-		else if(score >= 80) {
+		else if(score >= 80 && score < 90) {
 			System.out.println("B학점 입니다.");
 		}
-		else if(score >= 70) {
+		else if(score >= 70 && score < 80) {
 			System.out.println("C학점 입니다.");
 		}
-		else if(score >= 60) {
+		else if(score >= 60 && score < 70) {
 			System.out.println("D학점 입니다.");
 		}
-		else {
+		else if(score >= 0 && score < 60){
 			System.out.println("F학점 입니다.");
+		}
+		else {
+			System.out.println("잘못된 점수 입력입니다.");	
 		}
 	}
 }
